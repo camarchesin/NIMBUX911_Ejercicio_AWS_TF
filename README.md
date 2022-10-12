@@ -146,12 +146,7 @@
 
 <p>A continuaci&oacute;n se adjunta diagrama de arquitectura de la soluci&oacute;n propuesta graficando componentes y comunicaciones, adicionalmente se a&ntilde;ade detalle de par&aacute;metros considerados de relevancia a fin de facilitar entendimiento del dise&ntilde;o.</p>
 
-
-
-<img src="https://i.im.ge/2022/10/13/2OV9e9.Diagrama-ARQ-Completo.jpg" alt="Diagrama_ARQ_Completo" border="0">
-
-
-
+<img src="https://i.im.ge/2022/10/13/2OevxY.Copia-de-Diagrama-ARQ-Final.jpg" alt="Diagrama_ARQ_NIMBUX" border="0">
 
 <p><strong><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Versiones</span></span></strong></p>
 
