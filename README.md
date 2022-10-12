@@ -1,19 +1,17 @@
-# NIMBUX911 - Ejercicio AWS + TF
+# NIMBUX911 - Ejercicio AWS + TF (IaaC)
 
-<p><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:48px"><em><strong>NIMBUX911&nbsp;</strong></em><em><strong>-&nbsp;Ejercicio AWS + TF</strong></em></span></span></p>
 
-<hr />
 <p>&nbsp;</p>
 
 <p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif"><strong>Acerca del repositorio</strong></span></span></p>
 
-<p><span style="font-size:16px">El presente repositorio contiene c&oacute;digo Terraform para el despliegue de infraestructura sobre AWS de acuerdo a la consigna acercada oportunamente.</span></p>
+<p><span style="font-size:16px">El presente repositorio contiene c&oacute;digo Terraform para el despliegue de infraestructura sobre AWS de acuerdo a la consigna acercada.</span></p>
 
 <p>&nbsp;</p>
 
 <p><span style="font-size:16px"><strong><span style="font-family:Arial,Helvetica,sans-serif">Descripci&oacute;n del contenido</span></strong></span></p>
 
-<p><span style="font-size:16px">Se ha distribuido el c&oacute;digo, salidas, declaraci&oacute;n de variables y definici&oacute;n de valores para las mismas en los siguientes archivos de acuerdo a est&aacute;ndar TF.</span></p>
+<p><span style="font-size:16px">Se ha distribuido el c&oacute;digo, salidas, declaraci&oacute;n de variables y valores por defecto para las mismas en los siguientes archivos de acuerdo al est&aacute;ndar TF.</span></p>
 
 <ul>
 	<li><span style="font-size:16px"><em>main.tf&nbsp;</em></span></li>
@@ -24,7 +22,7 @@
 
 <p>&nbsp;</p>
 
-<p><span style="font-size:16px">Adicionalmente el c&oacute;digo referencia a los siguientes scripts que contienen el c&oacute;digo requerido para la instalaci&oacute;n de servidores web (APACHE + NGINX) sobre las instancias EC2 a disponibilizar.</span></p>
+<p><span style="font-size:16px">Adicionalmente el c&oacute;digo TF referencia a los siguientes scripts que contienen instrucciones requeridas para la instalaci&oacute;n de servidores web (APACHE + NGINX) sobre las instancias EC2 a disponibilizar.</span></p>
 
 <ul>
 	<li><em><span style="font-size:16px">install_wsrv_1.sh</span></em></li>
@@ -35,7 +33,7 @@
 
 <p><span style="font-size:16px"><strong><span style="font-family:Arial,Helvetica,sans-serif">Variables</span></strong></span></p>
 
-<p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">A continuaci&oacute;n se brinda detalle de las variables declaradas en <strong><em>variable.tf </em></strong>para las cuales el c&oacute;digo TF espera valores en <em><strong>terraform.tfvars</strong></em>, los mismos se encuentra definidos en el archivo terraform.tfvars, </span></span><span style="font-size:14px"><span style="font-family:Arial,Helvetica,sans-serif"><em>a excepci&oacute;n de provider_access_key y provider_secret_key para las cuales no se expone valor por tratarse de informaci&oacute;n sensible [credenciales].</em></span></span></p>
+<p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">A continuaci&oacute;n se brinda detalle de las variables declaradas en <strong><em>variable.tf </em></strong>para las cuales el c&oacute;digo TF espera valores, los mismos se encuentra definidos en el archivo <em><strong>terraform.tfvars</strong></em>, </span></span><span style="font-size:14px"><span style="font-family:Arial,Helvetica,sans-serif"><em>a excepci&oacute;n de provider_access_key y provider_secret_key para las cuales no se expone valor por tratarse de informaci&oacute;n sensible [credenciales].</em></span></span></p>
 
 <p>&nbsp;</p>
 
