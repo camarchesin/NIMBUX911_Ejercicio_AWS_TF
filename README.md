@@ -1,5 +1,8 @@
 # NIMBUX911 - Ejercicio AWS + TF
 
+<p><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:48px"><em><strong>NIMBUX911&nbsp;</strong></em><em><strong>-&nbsp;Ejercicio AWS + TF</strong></em></span></span></p>
+
+<hr />
 <p>&nbsp;</p>
 
 <p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif"><strong>Acerca del repositorio</strong></span></span></p>
@@ -24,15 +27,15 @@
 <p><span style="font-size:16px">Adicionalmente el c&oacute;digo referencia a los siguientes scripts que contienen el c&oacute;digo requerido para la instalaci&oacute;n de servidores web (APACHE + NGINX) sobre las instancias EC2 a disponibilizar.</span></p>
 
 <ul>
-	<li><span style="font-size:16px">install_wsrv_1.sh</span></li>
-	<li><span style="font-size:16px">install_wsrv_2.sh &nbsp;</span></li>
+	<li><em><span style="font-size:16px">install_wsrv_1.sh</span></em></li>
+	<li><em><span style="font-size:16px">install_wsrv_2.sh &nbsp;</span></em></li>
 </ul>
 
 <p>&nbsp;</p>
 
-<p><span style="font-size:16px"><strong><span style="font-family:Arial,Helvetica,sans-serif">Variables&nbsp;</span></strong></span></p>
+<p><span style="font-size:16px"><strong><span style="font-family:Arial,Helvetica,sans-serif">Variables</span></strong></span></p>
 
-<p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">A continuaci&oacute;n se brinda detalle de las variables declaradas para las cuales el c&oacute;digo TF espera valores, los mismos se encuentra definidos en el archivo terraform.tfvars, </span></span><span style="font-size:14px"><span style="font-family:Arial,Helvetica,sans-serif"><em>a excepci&oacute;n de provider_access_key y provider_secret_key para las cuales no se expone valor por tratarse de informaci&oacute;n sensible [credenciales].</em></span></span></p>
+<p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">A continuaci&oacute;n se brinda detalle de las variables declaradas en <strong><em>variable.tf </em></strong>para las cuales el c&oacute;digo TF espera valores en <em><strong>terraform.tfvars</strong></em>, los mismos se encuentra definidos en el archivo terraform.tfvars, </span></span><span style="font-size:14px"><span style="font-family:Arial,Helvetica,sans-serif"><em>a excepci&oacute;n de provider_access_key y provider_secret_key para las cuales no se expone valor por tratarse de informaci&oacute;n sensible [credenciales].</em></span></span></p>
 
 <p>&nbsp;</p>
 
@@ -41,8 +44,8 @@
 		<tr>
 			<th scope="col" style="width:211px"><span style="font-size:16px"><strong>VARIABLE</strong></span></th>
 			<th scope="col" style="width:78px"><span style="font-size:16px"><strong>TIPO</strong></span></th>
-			<th scope="col" style="width: 554px;"><span style="font-size:16px">DETALLE</span></th>
-			<th scope="col" style="width: 228px;"><span style="font-size:16px">VALOR POR DEFECTO</span></th>
+			<th scope="col" style="width:554px"><span style="font-size:16px">DETALLE</span></th>
+			<th scope="col" style="width:228px"><span style="font-size:16px">VALOR POR DEFECTO</span></th>
 		</tr>
 	</thead>
 	<tbody>
@@ -135,19 +138,26 @@
 
 <p>&nbsp;</p>
 
+<p><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:16px"><strong>Output</strong></span></span></p>
+
+<p><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:16px">Se ha definido sobre el archivo <em><strong>output.tf</strong></em> el valor dns_name del Aplication Load Balancer&nbsp;como salida tras ejecuci&oacute;n del c&oacute;digo.</span></span></p>
+
+<p>&nbsp;</p>
+
 <p><strong><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Arquitectura de soluci&oacute;n</span></span></strong></p>
 
 <p>A continuaci&oacute;n se adjunta diagrama de arquitectura de la soluci&oacute;n propuesta graficando componentes y comunicaciones, adicionalmente se a&ntilde;ade detalle de par&aacute;metros considerados de relevancia a fin de facilitar entendimiento del dise&ntilde;o.</p>
 
-<p>&nbsp;</p>
+
 
 <img src="https://i.im.ge/2022/10/13/2OV9e9.Diagrama-ARQ-Completo.jpg" alt="Diagrama_ARQ_Completo" border="0">
 
-<p>&nbsp;</p>
+
+
 
 <p><strong><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Versiones</span></span></strong></p>
 
-<p>Para el siguiente ejercicio pr&aacute;ctico se ha utilizado Terraform v1.3.1</p>
+<p>Para el siguiente ejercicio se ha utilizado Terraform v1.3.1.</p>
 
 <p>&nbsp;</p>
 
