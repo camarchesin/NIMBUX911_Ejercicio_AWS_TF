@@ -230,12 +230,6 @@ resource "aws_instance" "EC2_WSRV_1" {
   subnet_id = aws_subnet.PRV_SNET_1.id
   vpc_security_group_ids = ["${aws_security_group.EC2_SG_1.id}"]
   user_data = "${file("install_wsrv_1.sh")}"
-  #<<-EOF
-  #                #!/bin/bash
-  #                sudo apt-get update
-  #                sudo apt-get install -y nginx
-  #                sudo systemctl start nginx
-  #               EOF
   tags = {
     Name = "${var.instance_ec2_wsrv_1_tag_name}" 
   }
@@ -247,13 +241,6 @@ resource "aws_instance" "EC2_WSRV_2" {
   subnet_id = aws_subnet.PRV_SNET_2.id
   vpc_security_group_ids = ["${aws_security_group.EC2_SG_1.id}"]
     user_data = "${file("install_wsrv_2.sh")}"
- #   <<-EOF
- #                   #!/bin/bash
- #                   sudo apt-get update
- #                   sudo apt-get install -y apache2
- #                   sudo systemctl start apache2
- #                EOF
-#"${file("install_nginx.sh")}"
   tags = {
     Name = "${var.instance_ec2_wsrv_2_tag_name}"
   }
